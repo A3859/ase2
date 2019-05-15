@@ -26,13 +26,13 @@ BOOST_AUTO_TEST_CASE(subtract)
 {
 
 	std::istringstream xstr("3/4");
-	std::istringstream ystr("1/4");
+	std::istringstream ystr("2/4");
 
 	Rational x, y;
 	xstr >> x;
 	ystr >> y;
 
-	Rational result = Rational("1/2");
+	Rational result = Rational("1/4");
 
 	// Check equality of the results of two expressions
 	BOOST_CHECK_EQUAL((x - y), result);
